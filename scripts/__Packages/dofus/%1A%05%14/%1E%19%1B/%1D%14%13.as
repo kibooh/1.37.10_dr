@@ -1,0 +1,6 @@
+class dofus.§\x1a\x05\x14§.§\x1e\x19\x1b§.§\x1d\x14\x13§
+{
+   function §\x1d\x14\x13§()
+   {
+   }
+}
