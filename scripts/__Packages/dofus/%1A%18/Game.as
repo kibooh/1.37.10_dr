@@ -165,6 +165,18 @@ class dofus.§\x1a\x18§.Game extends dofus.§\x1a\x18§.Handler
       this.api.gfx["\x1b\x05\x16"](eval("\x19\x04").battlefield["\x1e\x1c\x04"]["\x1d\x11\x0f"]);
       this.api.ui["\x1a\t\b"]();
       this.api.ui["\x1a\t\x06"]("FightsInfos");
+      if(dofus["\x1e\x18\x05"].Game.bBlockTeam == true)
+      {
+         this.api["\x1c\x16\b"]["\x1e\r\x06"]["\x0e\x11"]();
+      }
+      if(dofus["\x1e\x18\x05"].Game.bBlockSpec == true)
+      {
+         this.api["\x1c\x16\b"]["\x1e\r\x06"]["\x0e\x10"]();
+      }
+      if(dofus["\x1e\x18\x05"].Game.bAutoReady == true)
+      {
+         this.ready(true);
+      }
    }
    function §\x1c\x01\x15§(§\x1b\x01\x0f§)
    {
@@ -282,9 +294,7 @@ class dofus.§\x1a\x18§.Game extends dofus.§\x1a\x18§.Handler
       this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x1b\x03"]();
       this.api["\x1e\x18\x05"].Game["\x1d\r\f"] = true;
       var _loc4_ = this.api["\x1e\x18\x05"]["\x1a\x15\r"]["\x1e\x03\b"]();
-      §§enumerate(_loc4_);
-      var _loc0_ = null;
-      while((_loc0_ = §§enumeration()) != null)
+      for(var k in _loc4_)
       {
          this.api.gfx["\x1c\x0f"](k,dofus["\x1e\x1c\x04"]["\x01\x12"],dofus["\x1e\x1c\x04"]["\x1a\r\x17"][_loc4_[k]["\x1a\x0e\x06"]]);
       }

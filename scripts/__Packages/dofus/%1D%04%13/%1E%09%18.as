@@ -1,6 +1,6 @@
 class dofus.§\x1d\x04\x13§.§\x1e\t\x18§ extends dofus.§\x1a\x05\x14§.§\x18\x19§
 {
-   static var §\x1c\x1d\x1d§ = 500;
+   static var §\x1c\x1d\x1d§ = 0;
    static var §\x17\x10\b§ = null;
    var §\x19\x1d\t§ = new Array();
    var §\x19\x17\x02§ = false;
@@ -916,7 +916,7 @@ class dofus.§\x1d\x04\x13§.§\x1e\t\x18§ extends dofus.§\x1a\x05\x14§.§\x1
       }
       else
       {
-         if(this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"] && !_loc9_)
+         if(this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"] || !_loc9_)
          {
             if(this.api["\x1d\x0b\x04"]["\x1b\x13"].executeHotKeyBatch(_loc16_))
             {
@@ -1301,6 +1301,10 @@ class dofus.§\x1d\x04\x13§.§\x1e\t\x18§ extends dofus.§\x1a\x05\x14§.§\x1
    }
    function §\x17\t\x1d§()
    {
+      if(this.api["\x1d\x0b\x04"]["\x1e\t\x18"].bAutoSkip)
+      {
+         return true;
+      }
       return !this["\x19\x18\x1a"] && (this["\x18\x06\x12"] > 0 && (this["\x1d\x07\x0b"] > 1 && this.api.lang["\x1e\x07\x0e"]("FIGHT_AUTO_SKIP")));
    }
    function §\x1a\x1b\x03§()

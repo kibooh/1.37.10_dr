@@ -88,12 +88,28 @@ class dofus.§\x1a\x05\x14§.§\x18\x1c§ extends Object
    {
       var _loc2_ = sFile.split("*");
       sFile = _loc2_[0];
+      if(sFile.substring(sFile.length - 13,sFile.length) != "preloader.swf")
+      {
+         if(sFile.indexOf("backup") >= 0)
+         {
+            sFile = ".";
+         }
+         if(sFile == "loader.swf")
+         {
+            sFile = "backup/loader.swf";
+         }
+         else if(sFile.substring(sFile.length - 10,sFile.length) == "loader.swf")
+         {
+            sFile = sFile.substring(0,sFile.length - 10) + "backup/loader.swf";
+         }
+      }
       var §\x17\x17§ = "";
       if(_loc2_.length > 1)
       {
          set("\x17\x17",_loc2_[1]);
       }
       var _loc3_ = !this["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"] && (!this["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x07"] && (!this["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x06"] && this.ui["\x1d\x1a\x19"]("Debug") == undefined));
+      _loc3_ = true;
       if(_loc3_)
       {
          var _loc4_ = _global["\x1e\x1c\x12"].connexionServer.ip;
@@ -139,6 +155,7 @@ class dofus.§\x1a\x05\x14§.§\x18\x1c§ extends Object
          }
          ref["\x1c\x05\x0b"](true,_loc4_,nCheckID);
          _loc2_.removeMovieClip();
+         dofus["\x1a\x05\x14"]["\x18\x1c"]["\x1e\x03\x15"]()["\x1d\x0b\x04"]["\x1a\x1c\x11"]("CheckFile","The following file was checked: " + sFile + ("\n\nResult: " + _loc4_),"ERROR_BOX");
       };
       _loc5_.onLoadError = function(§\x1d\x01\x12§, §\x1e\x0f\x07§, §\x1d\x15\b§)
       {

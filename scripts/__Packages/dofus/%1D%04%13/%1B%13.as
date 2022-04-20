@@ -776,6 +776,7 @@ class dofus.§\x1d\x04\x13§.§\x1b\x13§ extends dofus.§\x1a\x05\x14§.§\x18\
       _loc4_.push({f:"%et",t:this.api.electron.getCurrentDate()});
       _loc4_.push({f:"%ey",t:this.api.electron.getYesterdayDate()});
       _loc4_.push({f:"%g",t:this["\x1b\x17\b"]["\x1d\x18\x17"]});
+      _loc4_.push({f:"%id",t:this["\x1b\x17\b"].id});
       _loc4_.push({f:"%c",t:this["\x1b\x17\b"].cellNum});
       _loc4_.push({f:"%p",t:this.playerName});
       _loc4_.push({f:"%n",t:this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1c\x19\x16"]});

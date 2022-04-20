@@ -1,65 +1,44 @@
-if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
+class dofus.§\x1d\x19\x0e§.battlefield.§\x1e\x13\x14§ extends §\x19\x04§.battlefield.§\x13\x17§
 {
-   if(!dofus)
-   {
-      _global.dofus = new Object();
-   }
-   if(!dofus["\x1d\x19\x0e"])
-   {
-      _global.dofus["\x1d\x19\x0e"] = new Object();
-   }
-   if(!dofus["\x1d\x19\x0e"].battlefield)
-   {
-      _global.dofus["\x1d\x19\x0e"].battlefield = new Object();
-   }
-   var _loc0_ = null;
-   dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"] = function()
+   function §\x1e\x13\x14§()
    {
       super();
-   };
-   dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"] = function()
-   {
-      super();
-   } extends eval("\x19\x04").battlefield["\x13\x17"];
-   var _loc1_ = dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"] = function()
-   {
-      super();
-   }.prototype;
-   _loc1_["\x17\n\x13"] = function §\x17\n\x13§()
+   }
+   function §\x17\n\x13§()
    {
       return this["\x17\x1a\x10"];
-   };
-   _loc1_["\x16\x14\x14"] = function §\x16\x14\x14§()
+   }
+   function §\x16\x14\x14§()
    {
       return this["\x17\x15\f"];
-   };
-   _loc1_["\x16\x14\x15"] = function §\x16\x14\x15§()
+   }
+   function §\x16\x14\x15§()
    {
       return this["\x17\x15\r"];
-   };
-   _loc1_["\x16\x01\x02"] = function §\x16\x01\x02§(§\x1b\x0e\x07§)
+   }
+   function §\x16\x01\x02§(§\x1b\x0e\x07§)
    {
       this["\x17\x15\r"] = _loc2_;
       return this["\x16\x14\x15"]();
-   };
-   _loc1_.initialize = function initialize(§\x1c\n\r§, §\x1a\x1e\x1b§, §\x1a\x18\x0f§, §\x1b\r\x14§, oAPI)
+   }
+   function initialize(§\x1c\n\r§, §\x1a\x1e\x1b§, §\x1a\x18\x0f§, §\x1b\r\x14§, oAPI)
    {
       super.initialize(_loc3_,_loc4_,_loc5_,_loc6_);
       eval("\x1c\x1a\x05")["\x1e\x0e\x19"]["\x1e\x0e\x1b"].initialize(this);
       this["\x17\x1a\x10"] = oAPI;
-   };
-   _loc1_["\x1c\n"] = function §\x1c\n§(§\x1a\x1b\x06§, §\x1a\x10\x05§, §\x1c\x17\x18§)
+   }
+   function §\x1c\n§(§\x1a\x1b\x06§, §\x1a\x10\x05§, §\x1c\x17\x18§)
    {
       if(this.api["\x1d\x0b\x04"]["\x1b\x1b\x13"]["\x1d\x1e\x02"]("PointsOverHead") && this.api.electron["\x1d\f\r"])
       {
          super["\x1c\n"](_loc3_,_loc4_,_loc5_);
       }
-   };
-   _loc1_["\x1c\x03\x1b"] = function §\x1c\x03\x1b§()
+   }
+   function §\x1c\x03\x1b§()
    {
       _root.onCriticalError(this.api.lang.getText("CRITICAL_ERROR_LOADING_BATTLEFIELD"));
-   };
-   _loc1_["\x1c\x02\x16"] = function §\x1c\x02\x16§()
+   }
+   function §\x1c\x02\x16§()
    {
       this["\x17\x15\r"] = undefined;
       this["\x17\x15\f"] = undefined;
@@ -188,8 +167,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
          _loc15_ = _loc15_ + 1;
       }
       this["\x1e\x15\x06"]({type:"mapLoaded"});
-   };
-   _loc1_["\x1c\x07\x19"] = function §\x1c\x07\x19§(§\x1d\x01\x0e§)
+   }
+   function §\x1c\x07\x19§(§\x1d\x01\x0e§)
    {
       if(this.api["\x1d\x0b\x04"]["\x1a\n\x19"]["\x1d\f\x17"])
       {
@@ -322,8 +301,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
                break;
             }
       }
-   };
-   _loc1_["\x1c\x07\x17"] = function §\x1c\x07\x17§(§\x1d\x01\x0e§)
+   }
+   function §\x1c\x07\x17§(§\x1d\x01\x0e§)
    {
       if(this.api["\x1d\x0b\x04"]["\x1a\n\x19"]["\x1d\f\x17"])
       {
@@ -381,8 +360,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
             this.api.ui["\x1b\x07\x02"](false);
             this["\x1e\x12\x14"](_loc2_.num);
       }
-   };
-   _loc1_["\x1c\x07\x18"] = function §\x1c\x07\x18§(§\x1d\x01\x0e§)
+   }
+   function §\x1c\x07\x18§(§\x1d\x01\x0e§)
    {
       if(this.api["\x1d\x0b\x04"]["\x1a\n\x19"]["\x1d\f\x17"])
       {
@@ -412,8 +391,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
             this.api["\x1e\x18\x05"]["\x13\x1a"].gfx_canLaunch = false;
             this["\x1d\x16\n"]();
       }
-   };
-   _loc1_["\x1b\x1d\x18"] = function §\x1b\x1d\x18§(§\x1c\x1e\x1b§, §\x0b\x17§)
+   }
+   function §\x1b\x1d\x18§(§\x1c\x1e\x1b§, §\x0b\x17§)
    {
       if(_loc3_ == undefined)
       {
@@ -510,6 +489,7 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
             var _loc21_ = _loc4_["\x1e\x0f\x16"].alignment.index;
             var _loc22_ = _loc4_.challenge["\x1e\f\x1d"];
             var _loc23_ = false;
+            loop2:
             switch(_loc22_)
             {
                case 0:
@@ -529,7 +509,7 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
                         if(_loc19_ == _loc20_)
                         {
                            _loc23_ = !this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x1b"];
-                           break;
+                           break loop2;
                         }
                         _loc23_ = this.api.lang["\x1e\t\x02"](_loc19_,_loc20_) && (this.api.lang["\x1e\t\x03"](_loc19_,_loc21_) && !this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x1b"]);
                         break;
@@ -773,8 +753,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
          this.api.ui.removeCursor();
          this.api["\x1e\x18\x05"].Game["\x1b\x05\x13"]("move");
       }
-   };
-   _loc1_["\x1b\x1d\x16"] = function §\x1b\x1d\x16§(§\x1c\x1e\x1b§, §\x11\x10§)
+   }
+   function §\x1b\x1d\x16§(§\x1c\x1e\x1b§, §\x11\x10§)
    {
       if(!_loc3_)
       {
@@ -888,14 +868,19 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
             _loc10_ += " (" + _loc6_.LP + ")";
             this["\x1a\x1b\x19"](_loc6_);
          }
-         else if(this.api["\x1e\x18\x05"].Game["\x1d\x0f\t"])
-         {
-            _loc10_ += " (" + _loc6_["\x1d\b\x17"] + ")";
-         }
          else
          {
-            _loc10_ = "";
-            this["\x1c\x0b"](_loc6_.id,"text",dofus["\x1d\x19\x0e"].battlefield["\x1d\x18\x16"],[_loc6_["\x1d\x18\x17"],_loc6_.name,_loc6_["\x1e\x10\x0b"]]);
+            if(this.api["\x1e\x18\x05"].Game["\x1d\x0f\t"])
+            {
+               _loc10_ += " (" + _loc6_["\x1d\b\x17"] + ")";
+               §§goto(addr1112);
+            }
+            else
+            {
+               _loc10_ = "";
+               this["\x1c\x0b"](_loc6_.id,"text",dofus["\x1d\x19\x0e"].battlefield["\x1d\x18\x16"],[_loc6_["\x1d\x18\x17"],_loc6_.name,_loc6_["\x1e\x10\x0b"]]);
+            }
+            §§goto(addr1112);
          }
       }
       else if(_loc6_ instanceof dofus["\x1e\x18\x05"]["\x1b\x15\x11"])
@@ -958,6 +943,7 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
             return undefined;
          }
       }
+      addr1112:
       if(_loc6_["\x1d\f\x10"])
       {
          if(_loc10_ != "")
@@ -966,8 +952,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
          }
          this["\x1b\t\r"](_loc6_.id,true);
       }
-   };
-   _loc1_["\x1b\x1d\x17"] = function §\x1b\x1d\x17§(§\x1c\x1e\x1b§, §\x11\x10§)
+   }
+   function §\x1b\x1d\x17§(§\x1c\x1e\x1b§, §\x11\x10§)
    {
       if(!_loc3_)
       {
@@ -992,8 +978,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
       this["\x1b\x0f\x1c"](_loc4_.id,"text");
       this["\x1b\x0f\x1c"](_loc4_.id,"effects");
       this["\x1b\t\r"](_loc4_.id,false);
-   };
-   _loc1_["\x1c\x02\x03"] = function §\x1c\x02\x03§(§\x1d\x01\x03§, §\x0b\x17§)
+   }
+   function §\x1c\x02\x03§(§\x1d\x01\x03§, §\x0b\x17§)
    {
       if(_loc3_ == undefined)
       {
@@ -1082,48 +1068,23 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
                   if(_loc26_ != "X")
                   {
                      var _loc27_ = _loc26_ == "V";
-                     §§push(_loc27_);
-                     if(!_loc27_)
+                     if(dofus["\x1e\x18\x05"].Game.bEzJob)
                      {
-                        if(!§§pop())
-                        {
-                           if(_root._xscale != 100 && _loc12_ == 1)
-                           {
-                              return undefined;
-                           }
-                           _loc21_["\x1d\x0e"](_loc23_.description,this.api["\x1d\x0b\x04"]["\x1e\t\x18"],this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"],[_loc5_,_loc5_.num,_loc22_],_loc27_);
-                           continue;
-                        }
+                        this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"](_loc5_,_loc5_.num,_loc22_);
+                        return undefined;
+                     }
+                     if(_loc27_ && ((Key.isDown(Key.SHIFT) || _loc3_) && (_loc22_ != 44 && _loc12_ != 1)))
+                     {
                         this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"](_loc5_,_loc5_.num,_loc22_);
                         _loc20_ = false;
+                        _loc20_;
+                        break;
                      }
-                     _loc13_;
-                     !(_loc22_ != 44);
-                     return undefined;
-                     _loc26_ = this.api();
-                     _loc27_ = _loc26_ == "V";
-                     _loc25_ = _loc27_ <= eval(!_loc27_)["\x1e\x1c\x04"]["\x1c\x11\x0e"];
-                     "\x1d\x1b\x11";
-                     §§push(!_loc20_);
-                     §§push(_loc21_);
-                     §§push("\x1d\x0e\x1c");
-                     §§push(_loc22_ != 44);
-                     §§push(_loc12_ == 1);
-                     §§push(_loc22_);
-                     §§push(_loc5_);
-                     §§push("num");
-                     §§push(_loc12_ != 1);
-                     §§push(_loc27_);
-                     §§push(_loc26_ == "X");
-                     §§push(_loc25_);
-                     §§push(false);
-                     §§push(false);
-                     §§push(false);
-                     §§push(false);
-                     §§push(_loc24_);
-                     §§push(6);
-                     §§push(_loc23_);
-                     break;
+                     if(_root._xscale != 100 && _loc12_ == 1)
+                     {
+                        return undefined;
+                     }
+                     _loc21_["\x1d\x0e"](_loc23_.description,this.api["\x1d\x0b\x04"]["\x1e\t\x18"],this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"],[_loc5_,_loc5_.num,_loc22_],_loc27_);
                   }
                }
                if(_loc20_)
@@ -1161,30 +1122,21 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
                {
                   _loc29_["\x1d\x0e"](this.api.lang.getText("HOME_OF",[_loc31_["\x1b\x19\x16"]]),this.api["\x1d\x0b\x04"]["\x1e\t\x18"],this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x1c\b"],[undefined,"*" + _loc31_["\x1b\x19\x16"]]);
                }
-               loop0:
                for(var k in _loc11_)
                {
                   var _loc32_ = _loc11_[k];
                   var _loc33_ = new dofus["\x1e\x18\x05"]["\x1a\x1a\x12"](_loc32_);
                   var _loc34_ = _loc33_["\x1d\x1b\x11"](true,_loc31_["\x1d\x05\x17"],_loc31_["\x1d\x0f\x03"],_loc31_["\x1d\x0e\x07"]);
-                  if(_loc34_ == "X")
+                  if(_loc34_ != "X")
                   {
-                     continue;
-                  }
-                  var _loc35_ = _loc34_ == "V";
-                  if(!(_loc35_ && ((Key.isDown(Key.SHIFT) || _loc3_) && _loc32_ == 84)))
-                  {
-                     _loc29_["\x1d\x0e"](_loc33_.description,this.api["\x1d\x0b\x04"]["\x1e\t\x18"],this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"],[_loc5_,_loc5_.num,_loc32_],_loc35_);
-                     continue;
-                  }
-                  this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"](_loc5_,_loc5_.num,_loc32_);
-                  _loc28_ = false;
-                  while(true)
-                  {
-                     if(§§pop() == null)
+                     var _loc35_ = _loc34_ == "V";
+                     if(_loc35_ && ((Key.isDown(Key.SHIFT) || _loc3_) && _loc32_ == 84))
                      {
-                        break loop0;
+                        this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"](_loc5_,_loc5_.num,_loc32_);
+                        _loc28_ = false;
+                        break;
                      }
+                     _loc29_["\x1d\x0e"](_loc33_.description,this.api["\x1d\x0b\x04"]["\x1e\t\x18"],this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"],[_loc5_,_loc5_.num,_loc32_],_loc35_);
                   }
                }
                if(_loc28_)
@@ -1200,30 +1152,21 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
                var _loc40_ = true;
                var _loc41_ = this.api.ui["\x1e\x1a\x06"]();
                _loc41_["\x1c\b"](_loc10_);
-               loop2:
                for(var k in _loc11_)
                {
                   var _loc42_ = _loc11_[k];
                   var _loc43_ = new dofus["\x1e\x18\x05"]["\x1a\x1a\x12"](_loc42_);
                   var _loc44_ = _loc43_["\x1d\x1b\x11"](true,_loc39_,true,_loc38_);
-                  if(_loc44_ == "X")
+                  if(_loc44_ != "X")
                   {
-                     continue;
-                  }
-                  var _loc45_ = _loc44_ == "V";
-                  if(!(_loc45_ && ((Key.isDown(Key.SHIFT) || _loc3_) && (_loc42_ == 104 || _loc42_ == 153))))
-                  {
-                     _loc41_["\x1d\x0e"](_loc43_.description,this.api["\x1d\x0b\x04"]["\x1e\t\x18"],this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"],[_loc5_,_loc5_.num,_loc42_],_loc45_);
-                     continue;
-                  }
-                  this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"](_loc5_,_loc5_.num,_loc42_);
-                  _loc40_ = false;
-                  while(true)
-                  {
-                     if(§§pop() == null)
+                     var _loc45_ = _loc44_ == "V";
+                     if(_loc45_ && ((Key.isDown(Key.SHIFT) || _loc3_) && (_loc42_ == 104 || _loc42_ == 153)))
                      {
-                        break loop2;
+                        this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"](_loc5_,_loc5_.num,_loc42_);
+                        _loc40_ = false;
+                        break;
                      }
+                     _loc41_["\x1d\x0e"](_loc43_.description,this.api["\x1d\x0b\x04"]["\x1e\t\x18"],this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"],[_loc5_,_loc5_.num,_loc42_],_loc45_);
                   }
                }
                if(_loc40_)
@@ -1236,21 +1179,30 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
                var _loc47_ = true;
                var _loc48_ = this.api.ui["\x1e\x1a\x06"]();
                _loc48_["\x1c\b"](_loc10_);
+               loop2:
                for(var k in _loc11_)
                {
                   var _loc49_ = _loc11_[k];
                   var _loc50_ = new dofus["\x1e\x18\x05"]["\x1a\x1a\x12"](_loc49_);
                   var _loc51_ = _loc50_["\x1d\x1b\x11"](true,_loc46_["\x1d\x0e\x02"](this.api),_loc46_.price > 0,_loc46_["\x1d\r\x10"] || _loc46_["\x1d\x0e\x02"](this.api),false,_loc46_["\x1d\r\x10"]);
-                  if(_loc51_ != "X")
+                  if(_loc51_ == "X")
                   {
-                     var _loc52_ = _loc51_ == "V";
-                     if(_loc52_ && (Key.isDown(Key.SHIFT) || _loc3_))
-                     {
-                        this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"](_loc5_,_loc5_.num,_loc49_);
-                        _loc47_ = false;
-                        break;
-                     }
+                     continue;
+                  }
+                  var _loc52_ = _loc51_ == "V";
+                  if(!(_loc52_ && (Key.isDown(Key.SHIFT) || _loc3_)))
+                  {
                      _loc48_["\x1d\x0e"](_loc50_.description,this.api["\x1d\x0b\x04"]["\x1e\t\x18"],this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"],[_loc5_,_loc5_.num,_loc49_],_loc52_);
+                     continue;
+                  }
+                  this.api["\x1d\x0b\x04"]["\x1e\t\x18"]["\x1a\x06\x01"](_loc5_,_loc5_.num,_loc49_);
+                  _loc47_ = false;
+                  while(true)
+                  {
+                     if(§§pop() == null)
+                     {
+                        break loop2;
+                     }
                   }
                }
                if(_loc47_)
@@ -1266,8 +1218,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
       {
          this["\x1c\x07\x19"](_loc5_);
       }
-   };
-   _loc1_["\x1c\x02\x01"] = function §\x1c\x02\x01§(§\x1d\x01\x03§)
+   }
+   function §\x1c\x02\x01§(§\x1d\x01\x03§)
    {
       this["\x17\x15\r"] = _loc2_;
       if(_root._xscale != 100)
@@ -1342,8 +1294,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
             this["\x1c\x0b"]("enclos","text",dofus["\x1d\x19\x0e"].battlefield["\x1d\x18\x16"],[_loc16_["\x1d\x18\x17"],_loc18_,_loc16_["\x1d\x18\x1d"]]);
             break;
       }
-   };
-   _loc1_["\x1c\x02\x02"] = function §\x1c\x02\x02§(§\x1d\x01\x03§)
+   }
+   function §\x1c\x02\x02§(§\x1d\x01\x03§)
    {
       this["\x17\x15\r"] = undefined;
       this.api.ui["\x1d\x15\x1b"]();
@@ -1359,8 +1311,8 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
       this["\x1b\x10\x03"]("porte",false);
       this["\x1b\x0f\x1c"]("itemOnCell","text");
       this["\x1b\x10\x03"]("itemOnCell",false);
-   };
-   _loc1_["\x1a\x1b\x19"] = function §\x1a\x1b\x19§(§\x1b\x1a\x14§)
+   }
+   function §\x1a\x1b\x19§(§\x1b\x1a\x14§)
    {
       if(this.api.ui["\x1d\x0f\x12"]())
       {
@@ -1373,23 +1325,10 @@ if(!dofus["\x1d\x19\x0e"].battlefield["\x1e\x13\x14"])
             this.api.ui["\x1d\x1a\x19"]("Banner")["\x1a\x1c\x05"]("BannerSpriteInfos",{data:_loc2_},true,true);
          }
       }
-   };
-   _loc1_["\x1d\x16\x01"] = function §\x1d\x16\x01§()
+   }
+   function §\x1d\x16\x01§()
    {
       this.api.ui["\x1d\x1a\x19"]("Banner")["\x1d\x16\b"](false,true);
       this.api.gfx["\x1e\x1e\f"]("move");
-   };
-   _loc1_.addProperty("\x1b\x0e\x06",_loc1_["\x16\x14\x14"],function()
-   {
    }
-   );
-   _loc1_.addProperty("api",_loc1_["\x17\n\x13"],function()
-   {
-   }
-   );
-   _loc1_.addProperty("\x1b\x0e\x07",_loc1_["\x16\x14\x15"],_loc1_["\x16\x01\x02"]);
-   ASSetPropFlags(_loc1_,null,1);
 }
-toggleHighQuality();
-stop();
-return §§pop()[§§pop()];

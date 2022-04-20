@@ -1026,10 +1026,15 @@ class dofus.§\x1a\x18§.§\t§ extends dofus.§\x1a\x18§.Handler
    function §\x1c\x02\n§(§\x1b\x01\x0f§)
    {
       var _loc3_ = Number(_loc2_);
-      this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](this.api.lang.getText("INFORMATIONS"),this.api.lang.getText("NEW_LEVEL",[_loc3_]),"ERROR_BOX",{name:"NewLevel"});
+      if(dofus["\x1e\x18\x05"].Game.bNoLevelUp)
+      {
+         this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"Level up (" + (_loc2_ + ")"),"COMMANDS_CHAT");
+      }
+      else
+      {
+         this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](this.api.lang.getText("INFORMATIONS"),this.api.lang.getText("NEW_LEVEL",[_loc3_]),"ERROR_BOX",{name:"NewLevel"});
+      }
       this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\b\x17"] = _loc3_;
-      this.api["\x1e\x18\x05"]["\x1b\x17\r"].data["\x1d\b\x17"] = _loc3_;
-      this.api["\x1d\x0b\x04"]["\x1a\f\x0f"]["\x1a\x1c\f"](dofus["\x1d\x04\x13"]["\x1a\f\x0f"]["\x1a\f\b"]);
    }
    function §\x1b\x1e\x15§(§\x1b\x01\x0f§)
    {

@@ -19,7 +19,157 @@ class dofus.§\x1a\x05\x14§.§\x1e\x1c\x07§.§\x03\x12§ extends dofus.§\x1a\
       {
          var _loc5_ = _loc3_.split(" ");
          var _loc6_ = _loc5_[0].substr(1).toUpperCase();
+         if(_loc6_ == "MENU")
+         {
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](" - AzureMenu 1.37.10 - ","Commands list:\n/anim: Disable spell/death animations\n/skiploot: Disable loot popup\n/nolvl: Disable level up popup\n/block: Block combat\n/nospec: Block spectator mode\n/ready: Auto-Ready\n/skipturn: Skip turn automatically\n/join player delay: Join combat automatically\n/follow playerId: Follows player movements\n/move cellId: move to cell\n/ezjob: Click to reap\n/netlog: Show net log\n/console: Open debug console\n/md5: MD5 hash\n/process command: Process command\n/off: Disable everything","ERROR_BOX");
+            return 0;
+         }
+         if(_loc6_ == "SKIPLOOT")
+         {
+            var _loc20_ = !this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x06"];
+            this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x06"] = !this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x06"];
+            var _loc21_ = "Skip loot panel: ";
+            _loc21_ += "<b>";
+            _loc21_ += _loc20_;
+            _loc21_ += "</b>";
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "ANIM")
+         {
+            _loc20_ = !this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x07"];
+            this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x07"] = !this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x07"];
+            _loc21_ = "Skip spell anim: ";
+            _loc21_ += "<b>";
+            _loc21_ += _loc20_;
+            _loc21_ += "</b>";
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "TACTIC")
+         {
+            var _loc23_ = !this.api["\x1e\x18\x05"].Game["\x1d\f\x1c"];
+            this.api["\x1e\x18\x05"].Game["\x1d\f\x1c"] = _loc23_;
+            _loc21_ = "Tactic Mode: ";
+            _loc21_ += "<b>";
+            _loc21_ += _loc23_;
+            _loc21_ += "</b>";
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "SKIPTURN")
+         {
+            _loc20_ = !this.api["\x1d\x0b\x04"]["\x1e\t\x18"].bAutoSkip;
+            this.api["\x1d\x0b\x04"]["\x1e\t\x18"].bAutoSkip = !this.api["\x1d\x0b\x04"]["\x1e\t\x18"].bAutoSkip;
+            _loc21_ = "Skip turn: ";
+            _loc21_ += "<b>";
+            _loc21_ += _loc20_;
+            _loc21_ += "</b>";
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "READY")
+         {
+            _loc20_ = !dofus["\x1e\x18\x05"].Game.bAutoReady;
+            dofus["\x1e\x18\x05"].Game.bAutoReady = _loc20_;
+            _loc21_ = "Auto-Ready: <b>" + (_loc20_ + "</b>");
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "NOSPEC")
+         {
+            _loc20_ = !dofus["\x1e\x18\x05"].Game.bBlockSpec;
+            dofus["\x1e\x18\x05"].Game.bBlockSpec = _loc20_;
+            _loc21_ = "Block Spectator: <b>" + (_loc20_ + "</b>");
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "BLOCK")
+         {
+            _loc20_ = !dofus["\x1e\x18\x05"].Game.bBlockTeam;
+            dofus["\x1e\x18\x05"].Game.bBlockTeam = _loc20_;
+            _loc21_ = "Block fight: <b>" + (_loc20_ + "</b>");
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "NOLVL")
+         {
+            _loc20_ = !dofus["\x1e\x18\x05"].Game.bNoLevelUp;
+            dofus["\x1e\x18\x05"].Game.bNoLevelUp = _loc20_;
+            _loc21_ = "Block level up dialog: <b>" + (_loc20_ + "</b>");
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "NETLOG")
+         {
+            _loc20_ = !dofus["\x1e\x18\x05"].Game.bNetLog;
+            dofus["\x1e\x18\x05"].Game.bNetLog = _loc20_;
+            _loc21_ = "Show net log: <b>" + (_loc20_ + "</b>");
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "EZJOB")
+         {
+            _loc20_ = !dofus["\x1e\x18\x05"].Game.bEzJob;
+            dofus["\x1e\x18\x05"].Game.bEzJob = _loc20_;
+            _loc21_ = "Job easy-mode: <b>" + (_loc20_ + "</b>");
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "OFF")
+         {
+            this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x06"] = false;
+            this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\r\x07"] = false;
+            dofus["\x1e\x18\x05"].Game.bBlockTeam = false;
+            dofus["\x1e\x18\x05"].Game.bBlockSpec = false;
+            dofus["\x1e\x18\x05"].Game.bAutoReady = false;
+            dofus["\x1e\x18\x05"].Game.bNoLevelUp = false;
+            dofus["\x1e\x18\x05"].Game.join = undefined;
+            dofus["\x1e\x18\x05"].Game.bNetLog = false;
+            this.api["\x1e\x18\x05"].Game["\x1d\f\x1c"] = false;
+            this.api.gfx["\x1e\x07"](this.api,false);
+            this.api["\x1d\x0b\x04"]["\x1e\t\x18"].bAutoSkip = false;
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"<b>Disabled everything</b>","COMMANDS_CHAT");
+            return 0;
+         }
          _loc5_.splice(0,1);
+         if(_loc6_ == "MOVE")
+         {
+            this.mapHandler = this.api.gfx["\x1d\x04\b"];
+            _loc20_ = Number(_loc5_[0]);
+            _loc21_ = this.api.gfx["\x1d\x04\b"]["\x1e\b\x01"](_loc20_).mc;
+            this.api.gfx["\x1c\x07\x19"](_loc21_);
+            return 0;
+         }
+         if(_loc6_ == "FOLLOW")
+         {
+            _loc20_ = _loc5_[0];
+            dofus["\x1e\x18\x05"].Game.follow = _loc20_;
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"Now following <b>" + (_loc20_ + "</b>"),"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "PROCESS")
+         {
+            this.api["\x1c\x16\b"]["\x1b\x15\f"](_loc5_[0]);
+            return 0;
+         }
+         if(_loc6_ == "MD5")
+         {
+            _loc20_ = new eval("\x19\x04")["\x1a\x05\x14"]["\x1c\x1e\x16"]();
+            _loc21_ = _loc20_["\x1d\x17\x06"](_loc5_[0]);
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
+         if(_loc6_ == "JOIN")
+         {
+            _loc20_ = _loc5_[0];
+            _loc21_ = _loc5_[1] != undefined ? _loc5_[1] : 0;
+            dofus["\x1e\x18\x05"].Game.join = _loc20_;
+            dofus["\x1e\x18\x05"].Game.joinDelay = _loc21_;
+            _loc21_ = "Auto-join: <b>" + (_loc20_ + ("</b>, Delay: <b>" + (_loc21_ + "ms</b>")));
+            this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,_loc21_,"COMMANDS_CHAT");
+            return 0;
+         }
          while(_loc5_[0].length == 0)
          {
             _loc5_.splice(0,1);
@@ -29,13 +179,19 @@ class dofus.§\x1a\x05\x14§.§\x1e\x1c\x07§.§\x03\x12§ extends dofus.§\x1a\
             case "HELP":
             case "H":
             case "?":
-               this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,this.api.lang.getText("COMMANDS_HELP"),"COMMANDS_CHAT");
+               this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,this.api.lang.getText("COMMANDS_HELP"),"INFO_CHAT");
                break;
             case "VERSION":
             case "VER":
             case "ABOUT":
                var _loc7_ = "--------------------------------------------------------------\n";
                _loc7_ += "<b>DOFUS RETRO Client v" + dofus["\x1e\x1c\x04"].VERSION + "." + dofus["\x1e\x1c\x04"]["\x1a\x10\x18"] + "." + dofus["\x1e\x1c\x04"]["\x1a\x10\x1a"] + "</b>";
+               §§push("COMMANDS_CHAT");
+               §§push(this.api.lang.getText("COMMANDS_HELP"));
+               §§push(undefined);
+               §§push(3);
+               §§push(this);
+               §§push("api");
                if(dofus["\x1e\x1c\x04"]["\x11\x15"] > 0)
                {
                   _loc7_ += " <b><font color=\"#FF0000\">BETA VERSION " + dofus["\x1e\x1c\x04"]["\x11\x15"] + "</font></b>";
@@ -177,7 +333,7 @@ class dofus.§\x1a\x05\x14§.§\x1e\x1c\x07§.§\x03\x12§ extends dofus.§\x1a\
                break;
             case "MAPID":
                this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"MAP ID : " + this.api["\x1e\x18\x05"]["\x1d\x04\x11"].id,"COMMANDS_CHAT");
-               if(this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"])
+               if(!this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"])
                {
                   this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"Area : " + this.api["\x1e\x18\x05"]["\x1d\x04\x11"].area,"COMMANDS_CHAT");
                   this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"Sub area : " + this.api["\x1e\x18\x05"]["\x1d\x04\x11"]["\x1a\x11\x02"],"COMMANDS_CHAT");
@@ -216,20 +372,12 @@ class dofus.§\x1a\x05\x14§.§\x1e\x1c\x07§.§\x03\x12§ extends dofus.§\x1a\
                }
                var _loc17_ = String(_loc5_[0]);
                var _loc18_ = this.api["\x1e\x18\x05"]["\x1a\x15\r"]["\x1e\x03\b"]();
-               loop1:
                for(var k in _loc18_)
                {
-                  if(!(_loc18_[k] instanceof dofus["\x1e\x18\x05"]["\x03\x1d"] && _loc18_[k].name == _loc17_))
+                  if(_loc18_[k] instanceof dofus["\x1e\x18\x05"]["\x03\x1d"] && _loc18_[k].name == _loc17_)
                   {
-                     continue;
-                  }
-                  var _loc19_ = _loc18_[k].id;
-                  while(true)
-                  {
-                     if(§§pop() == null)
-                     {
-                        break loop1;
-                     }
+                     var _loc19_ = _loc18_[k].id;
+                     break;
                   }
                }
                if(_loc19_ != undefined)
@@ -257,7 +405,7 @@ class dofus.§\x1a\x05\x14§.§\x1e\x1c\x07§.§\x03\x12§ extends dofus.§\x1a\
                this.api["\x1c\x16\b"]["\x13\x1a"]["\x1d\x10\x10"]();
                break;
             case "INVITE":
-               var _loc20_ = String(_loc5_[0]);
+               _loc20_ = String(_loc5_[0]);
                if(_loc20_.length == 0 || _loc20_ == undefined)
                {
                   break;
@@ -265,7 +413,7 @@ class dofus.§\x1a\x05\x14§.§\x1e\x1c\x07§.§\x03\x12§ extends dofus.§\x1a\
                this.api["\x1c\x16\b"].Party["\x1d\x10\x0f"](_loc20_);
                break;
             case "CONSOLE":
-               if(this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"])
+               if(!this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"])
                {
                   this.api.ui["\x1d\x06\x04"]("Debug","Debug",undefined,{bAlwaysOnTop:true});
                }
@@ -275,7 +423,7 @@ class dofus.§\x1a\x05\x14§.§\x1e\x1c\x07§.§\x03\x12§ extends dofus.§\x1a\
                }
                break;
             case "DEBUG":
-               if(this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"])
+               if(!this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"])
                {
                   this.api["\x1d\x0b\x04"]["\x1e\x17\t"]["\x1a\f\x01"]();
                }
@@ -298,7 +446,7 @@ class dofus.§\x1a\x05\x14§.§\x1e\x1c\x07§.§\x03\x12§ extends dofus.§\x1a\
                   this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,this.api.lang.getText("SYNTAX_ERROR",[" /" + _loc6_.toLowerCase() + " &lt;" + this.api.lang.getText("TEXT_WORD") + "&gt;"]),"ERROR_CHAT");
                   break;
                }
-               var _loc21_ = "!THINK!" + _loc5_.join(" ");
+               _loc21_ = "!THINK!" + _loc5_.join(" ");
                if(this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x07\x04"])
                {
                   this.api["\x1c\x16\b"].Chat.send(_loc21_,"*",_loc4_);
@@ -376,15 +524,13 @@ class dofus.§\x1a\x05\x14§.§\x1e\x1c\x07§.§\x03\x12§ extends dofus.§\x1a\
                this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"(°~°)","ERROR_BOX");
                break;
             case "TACTIC":
-               if(this.api["\x1e\x18\x05"]["\x1b\x17\r"]["\x1d\x10\t"] || this.api["\x1e\x18\x05"].Game["\x1d\x0f\t"])
-               {
-                  var _loc23_ = !this.api["\x1e\x18\x05"].Game["\x1d\f\x1c"];
-                  this.api["\x1e\x18\x05"].Game["\x1d\f\x1c"] = _loc23_;
-                  this.api.gfx["\x1e\x07"](this.api,_loc23_);
-                  this.api.ui["\x1d\x1a\x19"]("FightOptionButtons")["\x19\x11\x13"].selected = _loc23_;
-               }
+               _loc23_ = !this.api["\x1e\x18\x05"].Game["\x1d\f\x1c"];
+               this.api["\x1e\x18\x05"].Game["\x1d\f\x1c"] = _loc23_;
+               this.api.gfx["\x1e\x07"](this.api,_loc23_);
+               this.api.ui["\x1d\x1a\x19"]("FightOptionButtons")["\x19\x11\x13"].selected = _loc23_;
                break;
             case "FILEOUTPUT":
+               §§push(this);
                if(this.api.electron.enabled)
                {
                   var _loc24_ = Number(_loc5_[0]);

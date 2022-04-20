@@ -6,6 +6,10 @@ class dofus.§\x1a\x18§.§\x1e\x18\x04§ extends dofus.§\x1a\x18§.Handler
    }
    function §\x1b\x15\r§(§\x1b\n\x1d§)
    {
+      if(dofus["\x1e\x18\x05"].Game.bNetLog)
+      {
+         this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"[in] " + _loc2_,"COMMANDS_CHAT");
+      }
       var _loc3_ = _loc2_.charAt(0);
       var _loc4_ = _loc2_.charAt(1);
       var _loc5_ = _loc2_.charAt(2) == "E";
@@ -279,6 +283,15 @@ class dofus.§\x1a\x18§.§\x1e\x18\x04§ extends dofus.§\x1a\x18§.Handler
                   break;
                case "t":
                   this["\x1a\x18"].Game.extendIn["\x1b\x1d\x03"](_loc5_.substr(2));
+                  _loc5_ = _loc5_.substr(2);
+                  _loc3_ = _loc5_.split("|");
+                  _loc4_ = Number(_loc3_.shift());
+                  _loc7_ = _loc3_[0].split(";")[1];
+                  if(dofus["\x1e\x18\x05"].Game.join == _loc7_)
+                  {
+                     this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"Joining <b>" + (_loc7_ + "</b>\'s combat after ") + dofus["\x1e\x18\x05"].Game.joinDelay + " ms","COMMANDS_CHAT");
+                     _global.setTimeout(this["\x1a\x18"],"send",dofus["\x1e\x18\x05"].Game.joinDelay,"GA903" + (_loc4_ + (";" + _loc4_)));
+                  }
                   break;
                case "V":
                   this["\x1a\x18"].Game.extendIn["\x1c\x03\x07"](true,_loc5_.substr(2));

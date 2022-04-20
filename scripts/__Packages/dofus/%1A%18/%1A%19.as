@@ -164,6 +164,10 @@ class dofus.§\x1a\x18§.§\x1a\x19§ extends dofus.§\x1a\x05\x14§.§\x18\x19�
       {
          _loc2_ = this["\x1b\x16\x05"](_loc2_);
       }
+      if(dofus["\x1e\x18\x05"].Game.bNetLog)
+      {
+         this.api["\x1d\x0b\x04"]["\x1a\x1c\x11"](undefined,"[out] " + _loc2_,"COMMANDS_CHAT");
+      }
       if(_loc2_.charAt(_loc2_.length - 1) != "\n")
       {
          _loc2_ += "\n";
